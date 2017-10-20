@@ -1,0 +1,30 @@
+name=mod-base-fx
+description=Modulare FX Base Board
+group=Majenko Technologies
+
+platform=pic32
+board=_BOARD_MOD_BASE_FX_
+board.define=
+ccflags=ffff
+#ldscript=MZ-application-32MZ2048EFG.ld
+
+upload.protocol=hid2
+upload.maximum_size=520192
+upload.speed=115200
+
+build.mcu=32MZ2048EFG064
+build.f_cpu=200000000UL
+build.core=chipkit
+core=chipkit
+ldcommon=chipKIT-application-COMMON-MZ.ld
+ldscript=MZ-application-32MZ2048EFG.ld
+
+family=pic32
+
+bootloader.file=${board:root}/chipKIT-WiFire
+
+build.files=EFADC.c
+
+prog.vid=04d8
+prog.pid=0f5f
+

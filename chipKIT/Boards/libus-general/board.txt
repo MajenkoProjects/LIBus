@@ -1,0 +1,20 @@
+description=LIBus General Lighting
+group=Majenko Technologies
+platform=pic32
+board=_BOARD_LIBUS_GENERAL_
+board.flags=
+ccflags=-Map="map.map"
+ldscript=chipKIT-application-32MX270F256${upload.${prefs:board.${prefs:board}.programmer}.ldsuffix}.ld
+upload.protocol=stk500v2
+upload.maximum_size=258048
+upload.speed=115200
+build.mcu=32MX270F256B
+build.f_cpu=48000000L
+family=pic32
+core=chipkit
+name=libus-general
+
+bootloader.file=${board.root}/bootloader
+
+program.vid=0403
+program.pid=a662
