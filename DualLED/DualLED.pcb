@@ -1197,7 +1197,7 @@ Symbol['~' 0.3048mm]
 	SymbolLine[0.8225mm 0.8768mm 0.8710mm 0.7318mm 0.2032mm]
 	SymbolLine[0.8710mm 0.7318mm 0.8710mm 0.6350mm 0.2032mm]
 )
-Attribute("import::src0" "/home/matt/EnterpriseTOS/DualLED.sch")
+Attribute("import::src0" "DualLED.sch")
 Attribute("PCB::grid::unit" "mm")
 Attribute("PCB::grid::size" "0.0500mm")
 Via[70.3500mm 36.4500mm 0.6000mm 0.3000mm 0.0000 0.3000mm "" ""]

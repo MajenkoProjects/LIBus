@@ -1199,7 +1199,7 @@ Symbol['~' 0.3048mm]
 )
 Attribute("PCB::grid::unit" "mm")
 Attribute("PCB::grid::size" "0.0500mm")
-Attribute("import::src0" "/home/matt/EnterpriseTOS/NacelleSpinner.sch")
+Attribute("import::src0" "NacelleSpinner.sch")
 Via[59.0000mm 58.5000mm 0.6000mm 0.0000 3.6068mm 0.3000mm "" ""]
 Via[58.0000mm 57.5000mm 0.6000mm 0.0000 0.0000 0.3000mm "" ""]
 Via[58.0000mm 59.5000mm 0.6000mm 0.0000 0.0000 0.3000mm "" ""]
