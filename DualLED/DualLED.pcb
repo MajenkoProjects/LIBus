@@ -1590,15 +1590,15 @@ Element["hidename,onsolder" "CC0805KKX5R5BB106" "C4" "10µF" 87.7000mm 34.6501mm 
 
 )
 
-Element["hidename,onsolder" "MCWR06X1001FTL" "R1" "1K?" 66.9500mm 36.4250mm 0.1500mm -2.4000mm 2 64 "onsolder"]
+Element["selected,onsolder" "MCWR06X1001FTL" "R1" "1K?" 66.9500mm 36.4250mm 0.1500mm -2.4000mm 2 64 "selected,onsolder"]
 (
 	Attribute("device" "MCWR06X1001FTL")
 	Attribute("manufacturer" "MULTICOMP")
 	Attribute("manufacturer_part_number" "MCWR06X1001FTL")
 	Attribute("vendor" "Farnell")
 	Attribute("vendor_part_number" "2446589")
-	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.2800mm 0.8500mm 0.6850mm "1" "1" "onsolder,square"]
-	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.2800mm 0.8550mm 0.6850mm "2" "2" "onsolder,square"]
+	Pad[-0.0400mm -0.7750mm 0.0400mm -0.7750mm 0.7850mm 0.2800mm 0.8500mm 0.6850mm "1" "1" "selected,onsolder,square"]
+	Pad[-0.0400mm 0.7750mm 0.0400mm 0.7750mm 0.7850mm 0.2800mm 0.8550mm 0.6850mm "2" "2" "selected,onsolder,square"]
 	ElementLine [-0.7500mm 1.5000mm 0.7500mm 1.5000mm 0.1501mm]
 	ElementLine [-0.7500mm -1.5000mm 0.7500mm -1.5000mm 0.1501mm]
 	ElementLine [0.7500mm 0.4000mm 0.7500mm 1.5000mm 0.1501mm]

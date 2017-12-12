@@ -22,7 +22,7 @@ void LIBusMaster::begin() {
     LIBUSM_STA.UTXEN = 1;
     LIBUSM_STA.URXISEL = 0b00;
     LIBUSM_STA.ADDEN = 0;
-    LIBUSM_BRG = (getPeripheralClock() / (16 * 2400)) - 1;
+    LIBUSM_BRG = (getPeripheralClock() / (16 * 9600)) - 1;
     pinMode(LIBUSM_RX, INPUT_PULLUP);
     LIBUSM_MODE.ON = 1;
 }
@@ -50,6 +50,14 @@ bool LIBusMaster::areYouThere(uint32_t address) {
     send(address, 0x90, NULL, 0);
     uint32_t t = pulseIn(LIBUSM_RX, LOW, 3000);
     return (t > 0);
+}
+
+void LIBusMaster::setParameter(uint32_t address, uint8_t param, uint8_t value) {
+    uint8_t data[2];
+    data[0] = param;
+    data[1] = value;
+
+    send(address, CMD_SET_PARAMETER, data, 2);
 }
 
 LIBusMaster *LIBusMaster::_this;

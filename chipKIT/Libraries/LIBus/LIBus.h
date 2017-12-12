@@ -54,6 +54,9 @@ public:
 class LIBusMaster {
     private:
         static LIBusMaster *_this;
+        static const uint8_t CMD_SET_PARAMETER = 0x80;
+        static const uint8_t CMD_GET_PARAMETER = 0x81;
+
     public:
         LIBusMaster() {
             _this = this;
@@ -68,6 +71,7 @@ class LIBusMaster {
         void handleInterrupt();
         void send(uint32_t address, uint8_t cmd, uint8_t *data, uint32_t len);
         bool areYouThere(uint32_t address);
+        void setParameter(uint32_t address, uint8_t parameter, uint8_t val);
 };
 #endif
 

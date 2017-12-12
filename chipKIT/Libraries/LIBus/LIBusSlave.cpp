@@ -26,6 +26,8 @@ void LIBusSlave::begin() {
             _address |= (DEVCFG3bits.USERID & 0xFFFF);
         }
     }
+
+    srand(_address);
     mapPps(LIBUS_TX, LIBUS_TX_PPS);
     mapPps(LIBUS_RX, LIBUS_RX_PPS);
     setIntVector(LIBUS_VECTOR, ISR);
@@ -42,7 +44,7 @@ void LIBusSlave::begin() {
     LIBUS_STA.UTXEN = 0;
     LIBUS_STA.URXISEL = 0b00;
 //            LIBUS_STA.ADDEN = 1;
-    LIBUS_BRG = (getPeripheralClock() / (16 * 2400)) - 1;
+    LIBUS_BRG = (getPeripheralClock() / (16 * 9600)) - 1;
     pinMode(LIBUS_TX, INPUT_PULLUP);
     LIBUS_MODE.ON = 1;
 }
