@@ -41,6 +41,7 @@
 #define LIBUS_BRG           U2BRG
 #define LIBUS_RXREG         U2RXREG
 #define LIBUS_TXREG         U2TXREG
+#define LIBUS_BOARD_TYPE    0x20
 
 
 
