@@ -69,7 +69,7 @@ class LIBusMaster {
         void begin();
         void write(uint16_t b);
         void handleInterrupt();
-        void send(uint32_t address, uint8_t cmd, uint8_t *data, uint32_t len);
+        void send(uint32_t address, uint8_t cmd, const uint8_t *data, uint32_t len);
         bool areYouThere(uint32_t address);
         void setParameter(uint32_t address, uint8_t parameter, uint8_t val);
 };

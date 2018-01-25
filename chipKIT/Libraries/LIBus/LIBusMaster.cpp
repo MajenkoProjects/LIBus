@@ -36,7 +36,7 @@ void LIBusMaster::handleInterrupt() {
     
 }
 
-void LIBusMaster::send(uint32_t address, uint8_t cmd, uint8_t *data, uint32_t len) {
+void LIBusMaster::send(uint32_t address, uint8_t cmd, const uint8_t *data, uint32_t len) {
     write(0x100 | ((address >> 16) & 0xFF));
     write((address >> 8) & 0xFF);
     write(address & 0xFF);
